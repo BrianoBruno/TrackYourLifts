@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Track Your Workout</title>
+
+  <style>
+    :root {
+      --bg: #0b0f1a;
+      --card: #151a2d;
+      --accent: #d8f14c;
+      --text: #ffffff;
+      --muted: #9aa3b2;
+      --danger: #ff4d6d;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+    }
+
+    header p {
+      max-width: 600px;
+      margin: 0 auto 40px auto;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 16px 32px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: 0.2s ease;
+    }
+
+    .btn.primary {
+      background: var(--accent);
+      color: #000;
+    }
+
+    .btn.secondary {
+      border: 2px solid var(--accent);
+      color: var(--accent);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.95;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 2rem;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .feature {
+      background: var(--card);
+      padding: 30px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .feature h3 {
+      margin-bottom: 12px;
+      font-size: 1.2rem;
+    }
+
+    .feature p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--muted);
+      border-top: 1px solid rgba(255,255,255,0.05);
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Track Your Workout</h1>
+    <p>
+      A clean, powerful workout tracker that helps you log lifts,
+      track progress, and stay consistent — all offline.
+    </p>
+
+    <div class="buttons">
+      <a href="#" class="btn primary">Download for iOS – Coming Soon</a>
+      <a href="#" class="btn secondary">Download for Android – Coming Soon</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Everything You Need. Nothing You Don’t.</h2>
+
+    <div class="features">
+      <div class="feature">
+        <h3>📋 Easy Workout Logging</h3>
+        <p>Create sessions, add exercises, log weight, reps, and notes in seconds.</p>
+      </div>
+
+      <div class="feature">
+        <h3>🔥 Failure & PR Tracking</h3>
+        <p>Track warmups, working sets, and failure sets while monitoring personal records.</p>
+      </div>
+
+      <div class="feature">
+        <h3>📊 Progress Insights</h3>
+        <p>See your heaviest lifts, last workouts, total volume, and strength trends.</p>
+      </div>
+
+      <div class="feature">
+        <h3>🗓 Workout Calendar</h3>
+        <p>Visual calendar with muscle group highlights for each training day.</p>
+      </div>
+
+      <div class="feature">
+        <h3>⏱ Built-In Rest Timer</h3>
+        <p>Automatic or manual rest timer to keep your training efficient.</p>
+      </div>
+
+      <div class="feature">
+        <h3>🔒 Fully Offline</h3>
+        <p>No accounts. No cloud dependency. Your data stays on your device.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Track Your Workout. All rights reserved.
+  </footer>
+
+</body>
+</html>
